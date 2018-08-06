@@ -9,5 +9,7 @@ module('Unit | Controller | movie-listing', function(hooks) {
 
     assert.deepEqual(ctrl.get('genres'), [],
       'Genres list is initialized with default value');
+    assert.equal(ctrl.get('vote_average'), 3,
+      'Rating is initialized with default value');
   });
 });
