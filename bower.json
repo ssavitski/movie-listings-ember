@@ -4,6 +4,7 @@
     "reset-scss": "^2.0.4"
   },
   "devDependencies": {
-    "bemify": "^0.1.2"
+    "bemify": "^0.1.2",
+    "breakpoint-sass": "^2.7.1"
   }
 }
