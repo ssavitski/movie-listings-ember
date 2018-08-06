@@ -5,7 +5,7 @@
 /tmp/
 
 # dependencies
-/bower_components/
+/vendor/
 /node_modules/
 
 # misc
@@ -16,6 +16,7 @@
 /npm-debug.log*
 /testem.log
 /yarn-error.log
+/package.lock.json
 
 # ember-try
 /.node_modules.ember-try/

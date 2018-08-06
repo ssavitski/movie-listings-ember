@@ -2,7 +2,7 @@
   "name": "movie-listing",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for movie-listing goes here",
+  "description": "List of most popular movies",
   "license": "MIT",
   "author": "",
   "directories": {
@@ -27,6 +27,7 @@
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
     "ember-cli-inject-live-reload": "^1.4.1",
+    "ember-cli-meyer-reset-sass": "0.0.5",
     "ember-cli-qunit": "^4.3.2",
     "ember-cli-sass": "^7.1.7",
     "ember-cli-shims": "^1.2.0",

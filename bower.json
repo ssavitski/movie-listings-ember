@@ -1,0 +1,6 @@
+{
+  "name": "movie-listing",
+  "dependencies": {
+    "reset-scss": "^2.0.4"
+  }
+}
