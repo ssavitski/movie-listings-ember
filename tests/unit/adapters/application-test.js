@@ -6,7 +6,6 @@ import config from 'movie-listing/config/environment';
 const {
   API_HOST:host,
   API_NAMESPACE:namespace,
-  API_KEY,
 } = config;
 
 module('Unit | Adapter | application', function(hooks) {
@@ -19,7 +18,5 @@ module('Unit | Adapter | application', function(hooks) {
       'Host name is used from config');
     assert.equal(adapter.get('namespace'), namespace,
       'Namespace is used from config');
-    assert.equal(adapter.get('headers.api_key'), API_KEY,
-      'API key is set & used from config');
   });
 });

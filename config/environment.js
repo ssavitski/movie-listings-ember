@@ -25,7 +25,7 @@ module.exports = function(environment) {
     API_PROTOCOL: 'https', // Protocol used for API requests
     API_DOMAIN: 'themoviedb.org', // Domain used for API requests
     API_SUB_DOMAIN: 'api', // Subdomain for API requests
-    API_NAMESPACE: '', // Namespace for API requests
+    API_NAMESPACE: '3', // Namespace for API requests
     API_KEY: '69456dd76a0ec05a747b7cfb63c15add',
   };
 
