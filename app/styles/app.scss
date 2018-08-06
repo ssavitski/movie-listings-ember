@@ -1,6 +1,9 @@
 // Reset CSS
 @import 'reset';
 
+// For BEM methodology usage
+@import './vendor/bemify/sass/bemify';
+
 // Base styles wich relates to all App
 @import "base/index";
 // Styles related to specific route
