@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(environment) {
-  let ENV = {
+  const ENV = {
     modulePrefix: 'movie-listing',
     environment,
     rootURL: '/',
@@ -21,7 +21,18 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+
+    API_PROTOCOL: 'https', // Protocol used for API requests
+    API_DOMAIN: 'themoviedb.org', // Domain used for API requests
+    API_SUB_DOMAIN: 'api', // Subdomain for API requests
+    API_NAMESPACE: '', // Namespace for API requests
+    API_KEY: '69456dd76a0ec05a747b7cfb63c15add',
   };
+
+  const separation = ENV.API_SUB_DOMAIN ? '.' : '';
+
+  // Host name for API requests
+  ENV.API_HOST = `${ENV.API_PROTOCOL}://${ENV.API_SUB_DOMAIN}${separation}${ENV.API_DOMAIN}`;
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
