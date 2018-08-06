@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { visit, find } from '@ember/test-helpers';
+import { visit, find, currentURL } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 
 module('Acceptance | application', function(hooks) {
@@ -12,5 +12,12 @@ module('Acceptance | application', function(hooks) {
       'App header exists');
     assert.ok(!!find('.app-footer'),
       'App footer exists');
+  });
+
+  test('should show movie listing as the home page', async function(assert) {
+    await visit('/');
+
+    assert.equal(currentURL(), '/movie-listing',
+      'should redirect automatically');
   });
 });

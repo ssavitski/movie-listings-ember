@@ -1,0 +1,19 @@
+body {
+  font-family: $font-base;
+  font-size: $font-size-base - 4px;
+  padding-top: 1px;
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base - 2px;
+  }
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base;
+  }
+}
+
+h1 {
+  font-size: 2em;
+  margin: 20px 0 10px;
+  font-weight: $medium;
+}
