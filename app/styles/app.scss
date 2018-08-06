@@ -7,6 +7,9 @@
 // Breakpoint mixins
 @import "./vendor/breakpoint-sass/stylesheets/breakpoint";
 
+// Materialize stylization for App base components
+@import 'ember-paper';
+
 // Base styles wich relates to all App
 @import "base/index";
 // Styles related to specific route
