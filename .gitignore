@@ -17,6 +17,7 @@
 /testem.log
 /yarn-error.log
 /package-lock.json
+/**/.gitkeep
 
 # ember-try
 /.node_modules.ember-try/
