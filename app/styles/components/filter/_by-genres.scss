@@ -1,0 +1,22 @@
+@include block('filter-by-genres') {
+  padding: 10px;
+  margin-top: 20px;
+
+  @include element('list') {
+    column-count: 2;
+    padding: 15px 10px 0;
+    background-color: rgb(250, 250, 250);
+
+    @include breakpoint($mobile) {
+      column-count: 3;
+    }
+
+    @include breakpoint($smartphone) {
+      column-count: 4;
+    }
+
+    @include breakpoint($desktop) {
+      column-count: 5;
+    }
+  }
+}

@@ -5,4 +5,7 @@ export default DS.Model.extend({
   // Attributes
   name: DS.attr(),
 
+  // Custom attributes
+  isSet: DS.attr({ defaultValue: false }),
+
 });
