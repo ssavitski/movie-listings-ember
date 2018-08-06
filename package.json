@@ -9,10 +9,13 @@
     "doc": "doc",
     "test": "tests"
   },
+  "pre-commit": [
+    "eslint"
+  ],
   "repository": "",
   "scripts": {
     "build": "ember build",
-    "lint:js": "eslint .",
+    "lint:js": "eslint app/**/*.js tests/**/*.js config/**/*.js public/**/*.js --fix",
     "start": "ember serve",
     "test": "ember test"
   },
