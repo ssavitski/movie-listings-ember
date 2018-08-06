@@ -1,0 +1,8 @@
+// Base styles wich relates to all App
+@import "base/index";
+// Styles related to specific route
+@import "routes/index";
+// Styles related to specific component
+@import "components/index";
+// Styles required for modification some stylization of vendor components/addons
+@import "vendor/index";
