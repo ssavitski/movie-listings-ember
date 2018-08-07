@@ -1,6 +1,8 @@
 {{#paper-list}}
   {{#each items as |item|}}
-    {{#paper-item class="md-3-line items-list__item"}}
+    {{#paper-item class="md-3-line items-list__item"
+                  data-popularity=item.popularity
+                  data-rating=item.vote_average}}
       <img src="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg"
            class="items-list__poster md-list-item-text"
            alt="{{item.title}}">

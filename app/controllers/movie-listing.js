@@ -1,5 +1,6 @@
 import Controller from '@ember/controller';
 import { computed } from '@ember/object';
+import { isEmpty } from '@ember/utils';
 
 export default Controller.extend({
   genres: undefined,
@@ -11,8 +12,24 @@ export default Controller.extend({
     'selectedRating',
 
     function() {
-      // sort movies by popularity DESC
-      return this.get('movies').sortBy('popularity').reverseObjects();
+      const selectedRating = this.get('selectedRating');
+      const selectedGenresIDs = this.get('selectedGenresIDs');
+      let movies = this.get('movies');
+
+      // movies filtered by selected rating
+      movies = movies.filter(movie =>
+        movie.get('vote_average') >= selectedRating
+      );
+      // movies filtered by selected genres
+      if (!isEmpty(selectedGenresIDs)) {
+        movies = movies.filter(movie =>
+          selectedGenresIDs.every(genreID =>
+            movie.get('genre_ids').mapBy('id').includes(genreID)
+          )
+        );
+      }
+
+      return movies;
     }
   ),
 

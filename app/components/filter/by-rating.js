@@ -6,6 +6,7 @@ export default Component.extend({
     'filter-by-rating',
     'md-whiteframe-z1',
   ],
+  title: 'Filter by rating',
 
   actions: {
     // Set rating for movies filtering

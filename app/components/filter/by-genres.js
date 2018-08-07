@@ -6,4 +6,5 @@ export default Component.extend({
     'filter-by-genres',
     'md-whiteframe-z1',
   ],
+  title: 'Filter by genre',
 });

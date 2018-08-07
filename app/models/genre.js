@@ -6,6 +6,6 @@ export default DS.Model.extend({
   name: DS.attr(),
 
   // Custom attributes
-  isSet: DS.attr({ defaultValue: false }),
+  isSet: DS.attr('boolean', { defaultValue: false }),
 
 });
