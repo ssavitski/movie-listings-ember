@@ -7,6 +7,11 @@ module.exports = function(defaults) {
     sassOptions: {
       extension: 'scss',
     },
+    nodeAssets: {
+      'simple-css-reset': {
+        import: ['reset.css'],
+      },
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated
