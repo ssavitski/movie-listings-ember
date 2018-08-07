@@ -1,11 +1,44 @@
 @include block('items-list') {
   margin: 20px 0;
 
+  @include element('item') {
+    padding-bottom: 20px;
+  }
+
+  @include element('divider') {
+    bottom: -10px;
+  }
+
   @include element('poster') {
-    max-width: 30%;
+    max-width: 100%;
+    height: auto;
+
+    @include breakpoint($iphone) {
+      max-width: 40%;
+    }
+
+    @include breakpoint($mobile) {
+      max-width: 40%;
+    }
+
+    @include breakpoint($smartphone) {
+      max-width: 30%;
+    }
+
+    @include breakpoint($desktop) {
+      max-width: 20%;
+    }
   }
 
   @include element('content') {
     padding-left: 10px;
+  }
+
+  @include element('genres') {
+    font-size: 1em;
+
+    @include breakpoint($smartphone) {
+      font-size: 1.2em;
+    }
   }
 }
