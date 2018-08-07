@@ -1,0 +1,11 @@
+@include block('items-list') {
+  margin: 20px 0;
+
+  @include element('poster') {
+    max-width: 30%;
+  }
+
+  @include element('content') {
+    padding-left: 10px;
+  }
+}

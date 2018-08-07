@@ -1,6 +1,10 @@
 <h1>List of most popular movies</h1>
 
+{{!-- section for filtering by genre --}}
 {{filter/by-genres genres=genres}}
-{{filter/by-rating rating=vote_average}}
+{{!-- section for filtering by rating --}}
+{{filter/by-rating rating=selectedRating}}
+{{!-- list of movies --}}
+{{listing/items-list items=filteredMovies}}
 
 {{outlet}}

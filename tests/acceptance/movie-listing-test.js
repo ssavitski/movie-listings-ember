@@ -12,7 +12,7 @@ module('Acceptance | movie listing', function(hooks) {
       'filter by genres exist on the page');
     assert.ok(!!find('.filter-by-rating'),
       'filter by rating exist on the page');
-    assert.ok(!!find('.movie-listing'),
+    assert.ok(!!find('.items-list'),
       'movie listing exist on the page');
   });
 });

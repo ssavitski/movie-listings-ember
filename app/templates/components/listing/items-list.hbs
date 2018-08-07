@@ -1,0 +1,23 @@
+{{#paper-list}}
+  {{#each items as |item|}}
+    {{#paper-item class="md-3-line items-list__item"}}
+      <img src="https://image.tmdb.org/t/p/original/wwemzKWzjKYJFfCeiB57q3r4Bcm.svg"
+           class="items-list__poster md-list-item-text"
+           alt="{{item.title}}">
+
+      <div class="md-list-item-text items-list__content">
+        <h3 class="items-list__title">{{item.title}}</h3>
+
+        <p class="items-list__genres">
+          <strong>Genres:</strong>
+          {{#each item.genre_ids as |genre index|}}
+            {{if index ','}} <span class="items-list__genre-name">{{genre.name}}</span>
+          {{/each}}
+        </p>
+      </div>
+      {{paper-divider inset=true}}
+    {{/paper-item}}
+  {{/each}}
+{{/paper-list}}
+
+{{yield}}
