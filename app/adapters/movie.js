@@ -1,6 +1,9 @@
 import { isEmpty } from '@ember/utils';
 
 import ApplicationAdapter from './application';
+import config from 'movie-listing/config/environment';
+
+const { API_KEY:api_key } = config;
 
 export default ApplicationAdapter.extend({
   urlForFindAll() {
@@ -9,6 +12,6 @@ export default ApplicationAdapter.extend({
 
     namespace = isEmpty(namespace) ? '' : `/${namespace}`;
 
-    return `${host}${namespace}/movie/now_playing`;
+    return `${host}${namespace}/movie/now_playing?api_key=${api_key}`;
   },
 });
