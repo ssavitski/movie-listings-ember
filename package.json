@@ -15,6 +15,7 @@
   "repository": "",
   "scripts": {
     "build": "ember build",
+    "build:prod": "ember build --environment=production",
     "lint:js": "eslint app/**/*.js tests/**/*.js config/**/*.js public/**/*.js --fix",
     "start": "ember serve",
     "test": "ember test"

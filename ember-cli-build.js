@@ -12,6 +12,18 @@ module.exports = function(defaults) {
         import: ['reset.css'],
       },
     },
+    outputPaths: {
+      app: {
+        css: {
+          'app': '/css/movie-listing.css',
+        },
+        js: '/js/movie-listing.js',
+      },
+      vendor: {
+        css: '/css/vendor.css',
+        js: '/js/vendor.js',
+      },
+    },
   });
 
   // Use `app.import` to add additional libraries to the generated
