@@ -1,4 +1,8 @@
-<h2>{{title}}:</h2>
+<h2 class="filter-by-genres__header
+           {{if isCollapsed 'filter-by-genres__header--is-collapsed'}}"
+    {{action "toggleGenreSection"}}>
+  {{title}}: <span>{{paper-icon "expand-more" size=24}}</span>
+</h2>
 
 <ul class="filter-by-genres__list">
   {{#each genres as |genre|}}

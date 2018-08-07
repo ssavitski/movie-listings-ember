@@ -6,5 +6,13 @@ export default Component.extend({
     'filter-by-genres',
     'md-whiteframe-z1',
   ],
+
   title: 'Filter by genre',
+  isCollapsed: false, // responsible for slide toggle genre section
+
+  actions: {
+    toggleGenreSection() {
+      this.toggleProperty('isCollapsed');
+    },
+  },
 });
