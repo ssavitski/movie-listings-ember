@@ -11,6 +11,10 @@
         {{genre.name}}
       {{/paper-checkbox}}
     </li>
+  {{else}}
+    <li>
+      <h4 class="filter-by-genres__empty-msg">There is no genres for filtering</h4>
+    </li>
   {{/each}}
 </ul>
 

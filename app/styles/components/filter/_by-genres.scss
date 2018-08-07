@@ -25,6 +25,10 @@
     }
   }
 
+  @include element('empty-msg') {
+    @extend .items-list__empty-msg;
+  }
+
   @include element('list') {
     column-count: 2;
     padding: 15px 10px 0;

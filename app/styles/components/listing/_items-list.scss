@@ -30,6 +30,10 @@
     }
   }
 
+  @include element('empty-msg') {
+    padding: 20px 10px;
+  }
+
   @include element('content') {
     padding-left: 10px;
   }
