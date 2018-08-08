@@ -4,8 +4,16 @@
   color: #fff;
 
   md-checkbox:not(.md-checked) .md-icon {
-    border-color: #fff;
-    background-color: #fff;
+    border-color: #ddd;
+    background-color: #ddd;
+  }
+
+  md-checkbox.md-checked .md-icon {
+    background-color: transparent;
+
+    &:after {
+      border-color: #ffc107;
+    }
   }
 
   @include element('header') {

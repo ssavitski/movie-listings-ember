@@ -18,7 +18,9 @@
     "build:prod": "ember build --environment=production",
     "lint:js": "eslint app/**/*.js tests/**/*.js config/**/*.js public/**/*.js --fix",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "test:server": "ember test --server",
+    "install:dependencies": "npm install && bower install"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.7.0",
