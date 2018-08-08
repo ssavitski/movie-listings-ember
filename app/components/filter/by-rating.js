@@ -4,7 +4,6 @@ export default Component.extend({
   tagName: 'section',
   classNames: [
     'filter-by-rating',
-    'md-whiteframe-z1',
   ],
   title: 'Filter by rating',
 

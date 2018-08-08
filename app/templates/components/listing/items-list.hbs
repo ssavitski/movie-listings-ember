@@ -1,6 +1,6 @@
 {{#paper-list}}
   {{#each items as |item|}}
-    {{#paper-item class="md-3-line items-list__item"
+    {{#paper-item class="md-3-line items-list__item md-whiteframe-z1"
                   data-popularity=item.popularity
                   data-rating=item.vote_average}}
       <img src="{{item.whole_poster_path}}"
@@ -17,7 +17,6 @@
           {{/each}}
         </p>
       </div>
-      {{paper-divider inset=true class="items-list__divider"}}
     {{/paper-item}}
   {{else}}
     <h4 class="items-list__empty-msg">There is no movies with selected criteria</h4>

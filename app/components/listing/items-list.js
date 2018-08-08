@@ -4,6 +4,6 @@ export default Component.extend({
   tagName: 'section',
   classNames: [
     'items-list',
-    'md-whiteframe-z1',
+    'centered-content',
   ],
 });

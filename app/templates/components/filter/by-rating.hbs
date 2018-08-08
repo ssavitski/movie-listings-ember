@@ -1,12 +1,14 @@
-<h2>{{title}}:</h2>
+<div class="centered-content">
+  <h2>{{title}}:</h2>
 
-{{star-rating
-  numStars=10
-  readOnly=false
-  rating=rating
-  onClick=(action "setRating")
-  baseColor="#ddd"
-  fillColor="#ffc107"
-}}
+  {{star-rating
+    numStars=10
+    readOnly=false
+    rating=rating
+    onClick=(action "setRating")
+    baseColor="#ddd"
+    fillColor="#ffc107"
+  }}
 
-{{yield}}
+  {{yield}}
+</div>

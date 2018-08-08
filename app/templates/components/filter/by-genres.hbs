@@ -1,10 +1,11 @@
 <h2 class="filter-by-genres__header
+           centered-content
            {{if isCollapsed 'filter-by-genres__header--is-collapsed'}}"
     {{action "toggleGenreSection"}}>
   {{title}}: <span>{{paper-icon "expand-more" size=24}}</span>
 </h2>
 
-<ul class="filter-by-genres__list">
+<ul class="filter-by-genres__list centered-content">
   {{#each genres as |genre|}}
     <li class="filter-by-genres__item">
       {{#paper-checkbox value=genre.isSet onChange=(action (mut genre.isSet))}}

@@ -1,8 +1,10 @@
 @include block('items-list') {
-  margin: 20px 0;
+  margin: 20px auto;
+  background-color: $section-bg;
 
   @include element('item') {
-    padding-bottom: 20px;
+    padding: 10px 0;
+    margin-bottom: 10px;
   }
 
   @include element('divider') {
